@@ -20,7 +20,7 @@ public class DataClean {
         LinkedList<Map<String, String>> qroute = CleaningMethods.RemoveMissingData(finalves, 0.0);
         LinkedList<Map<String, List<String>>> unique_routes = CleaningMethods.UniqueIds(route, qroute);
         System.out.println(unique_routes.get(7).get("Query"));
-        //System.out.println(unique_routes.size());
+        System.out.println(unique_routes.size());
         System.out.println(unique_routes.get(7).get("URSID"));
         System.out.println(unique_routes.get(7).get("COVERAGE"));
         //LinkedList<Map<String, List<String>>> final_stat = CalcStat.Stat(unique_routes, "WPC_JD_EXT", 5);
